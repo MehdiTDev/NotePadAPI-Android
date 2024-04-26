@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">NoteAPI</string>
+    <string name="et_title">Write your note title here</string>
+    <string name="et_content">Write your note content here</string>
+    <string name="btn_save_note">Save note</string>
+    <string name="btn_save_changes">Save Changes</string>
+    <string name="btn_get_notes">Get all notes</string>
+</resources>

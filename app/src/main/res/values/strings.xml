@@ -5,4 +5,5 @@
     <string name="btn_save_note">Save note</string>
     <string name="btn_save_changes">Save Changes</string>
     <string name="btn_get_notes">Get all notes</string>
+    <string name="btn_create_note">Add note</string>
 </resources>

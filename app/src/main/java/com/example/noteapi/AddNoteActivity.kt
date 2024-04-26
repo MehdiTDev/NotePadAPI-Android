@@ -16,6 +16,7 @@ class AddNoteActivity : AppCompatActivity() {
         binding = ActivityAddNoteBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
+        // ClickListener for adding a new note
         binding.btnSave.setOnClickListener {
             addNote()
         }
@@ -25,8 +26,11 @@ class AddNoteActivity : AppCompatActivity() {
         val title = binding.etTitle.text.toString()
         val content = binding.etContent.text.toString()
 
+        // Creating a new Note object with the obtained title and content
         val newNote = Note(-1, title, content)
+        // Building the service for NoteService interface using ServiceBuilder
         val noteService = ServiceBuilder.buildService(NoteService::class.java)
+        // Making a request call to add a new note
         val requestCall = noteService.addNote(newNote)
 
         requestCall.enqueue(object: Callback<Note> {

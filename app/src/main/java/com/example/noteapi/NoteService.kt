@@ -21,7 +21,6 @@ interface NoteService {
     @POST("notes")
     fun addNote(@Body newNote: Note): Call<Note>
 
-//    @FormUrlEncoded
     @PUT("notes")
     fun updateNote(@Body editedNote: Note): Call<Note>
 

@@ -6,23 +6,25 @@
     android:layout_height="match_parent"
     tools:context=".AddNoteActivity"
     android:padding="@dimen/padding_medium"
-    android:orientation="vertical">
+    android:orientation="vertical"
+    android:background="@color/light_yellow">
 
     <EditText
         android:id="@+id/et_title"
         android:layout_width="match_parent"
-        android:layout_height="wrap_content"
+        android:layout_height="@dimen/height_title"
         android:hint="@string/et_title"
         android:layout_marginTop="@dimen/margin_big"
         android:textSize="@dimen/font_medium"
         android:background="@color/light_green"
         android:textStyle="bold"
+        android:gravity="top"
         />
 
     <EditText
         android:id="@+id/et_content"
         android:layout_width="match_parent"
-        android:layout_height="300dp"
+        android:layout_height="@dimen/height_content"
         android:hint="@string/et_content"
         android:layout_marginTop="@dimen/margin_medium"
         android:textSize="@dimen/font_medium"
